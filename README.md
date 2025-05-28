@@ -26,3 +26,7 @@
 ```bash
 git clone https://github.com/your-name/short-url-service.git
 cd short-url-service
+
+### 2. Установите зависимости через Composer
+```bash
+composer install
