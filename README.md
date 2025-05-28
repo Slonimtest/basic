@@ -26,7 +26,20 @@
 ```bash
 git clone https://github.com/your-name/short-url-service.git
 cd short-url-service
-
+```
 ### 2. Установите зависимости через Composer
 ```bash
 composer install
+```
+### 3. Настройте конфигурацию базы данных
+
+Отредактируйте файл config/db.php:
+```bash
+return [
+    'class' => 'yii\db\Connection',
+    'dsn' => 'mysql:host=localhost;dbname=short_urls',
+    'username' => 'your_db_user',
+    'password' => 'your_db_password',
+    'charset' => 'utf8',
+];
+```
